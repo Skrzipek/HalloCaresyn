@@ -13,7 +13,7 @@ class CaresynRouteServiceProvider extends RouteServiceProvider
    * The second parameter consists of the Fully-Qualified Class Name and the @ controller method that is called when the route is called.
    */
   public function map( Router $router ) {
-    $router->get('hellocaresyn', 'HelloCaresyn\content\CaresynContentController@sayCaresyn');
+    $router->get('hellocaresyn', 'HelloCaresyn\controller\CaresynContentController@sayCaresyn');
   }
 
 }
