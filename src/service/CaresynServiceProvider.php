@@ -2,7 +2,7 @@
 
 namespace Caresyn\service;
 
-use Plenty\Plugin\Provider;
+use Plenty\Plugin\ServiceProvider;
 
 class CaresynServiceProvider extends ServiceProvider
 {
