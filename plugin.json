@@ -1,0 +1,8 @@
+{
+    "name"              :"HelloCaresyn",
+    "description"       :"My first plugin",
+    "namespace"         :"Caresyn",
+    "author"            :"Oliver Skrzipek",
+    "type"              :"template",
+    "serviceProvider"   :"HelloCaresyn\\service\\CaresynServiceProvider"
+}
