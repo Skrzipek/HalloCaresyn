@@ -1,0 +1,12 @@
+{
+    "defaultEntryPoint" : "index.html",
+    "namespace"         : "Caresyn",
+    "menuEntries"       : [
+                            {
+                              "label": "Hello Caresyn",
+                              "menu": "start",
+                              "urlKey": "hello-world",
+                              "entryPoint": "index.html"
+                            }
+                          ]
+}
