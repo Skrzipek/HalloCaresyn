@@ -1,8 +1,10 @@
 
+{% set caresynBold = config("Caresyn.caresyn.string.bold") %}
 
-
-{% if caresyn.string.bold == '1' %}
+{% if caresynBold == '1' %}
     <h1><b>Hello Caresyn!</b></h1>
 {% else %}
     <h1>Hello Caresyn!</h1>
 {% endif %}
+
+assi: {{ caresynBold }}
