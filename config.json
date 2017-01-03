@@ -14,5 +14,11 @@
     "label"     : "Caresyn Test String Italic",
     "type"      : "checkbox",
     "default"   : "false"
+  },
+  {
+    "key"       : "caresyn.name",
+    "label"     : "Caresyn Test Name",
+    "type"      : "input",
+    "default"   : "Namenloser"
   }
 ]

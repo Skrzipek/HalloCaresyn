@@ -1,8 +1,16 @@
+{% set caresynBold      = config("Caresyn.caresyn.string.bold") %}
+{% set caresynItalic    = config("Caresyn.caresyn.string.italic") %}
+{% set caresynName      = config("Caresyn.caresyn.name") %}
 
-{% set caresynBold = config("Caresyn.caresyn.string.bold") %}
 
-{% if caresynBold == '1' %}
-    <h1><b>Hello Caresyn! Neu PULLEN</b></h1>
-{% else %}
-    <h1>Hello Caresyn! DOOF </h1>
-{% endif %}
+        <div class="row">
+            <div class="col-lg-6 col-slg-offset-3">
+
+            {% if caresynBold == '1' %}
+                <b>Hello {{ caresynName }} bei Caresyn!</b>
+            {% else %}
+                <b>Hello {{ caresynName }} bei Caresyn!</b>
+            {% endif %}
+
+            </div>
+        </div>
