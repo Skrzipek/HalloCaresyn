@@ -1,6 +1,6 @@
 <?php
 
-namespace Caresyn\service;
+namespace Caresyn\Service;
 
 use Plenty\Plugin\ServiceProvider;
 

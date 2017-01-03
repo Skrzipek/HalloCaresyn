@@ -1,6 +1,6 @@
 <?php
 
-namespace Caresyn\controller;
+namespace Caresyn\Controller;
 
 use Plenty\Plugin\Controller;
 use Plenty\Plugin\Templates\Twig;

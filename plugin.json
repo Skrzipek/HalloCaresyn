@@ -13,7 +13,7 @@
     "authorIcon"        : "",
     "email"             : "Oliver.Skrzipek@caresyn.com",
     "phone"             : "0176 43920914",
-    "serviceProvider"   : "HelloCaresyn\\service\\CaresynServiceProvider",
+    "serviceProvider"   : "Caresyn\\Service\\CaresynServiceProvider",
     "containers"        : [],
     "dataProviders"     : [],
     "javaScriptFiles"   : [],
