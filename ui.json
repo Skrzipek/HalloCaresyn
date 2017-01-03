@@ -4,8 +4,8 @@
     "menuEntries"       : [
                             {
                               "label": "Hello Caresyn",
-                              "menu": "crm",
-                              "urlKey": "hello-caresyn",
+                              "menu": "start",
+                              "urlKey": "caresyn",
                               "entryPoint": "index.html"
                             }
                           ]
