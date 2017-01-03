@@ -18,7 +18,7 @@
   {
     "key"       : "caresyn.name",
     "label"     : "Caresyn Test Name",
-    "type"      : "input",
+    "type"      : "text",
     "default"   : "Namenloser"
   }
 ]
