@@ -1,5 +1,6 @@
 [
   {
+      "tab"     : "Testing",
       "key"     : "caresyn.string.bold",
       "label"   : "Caresyn Test String Bold",
       "type"    : "dropdown",
@@ -8,17 +9,36 @@
               "1":"Yes"
             },
       "default":"0"
-  },
-  {
+  }, {
+    "tab"       : "Testing",
     "key"       : "caresyn.string.italic",
     "label"     : "Caresyn Test String Italic",
     "type"      : "checkbox",
     "default"   : "false"
-  },
-  {
+  },  {
+    "tab"       : "Testing",
     "key"       : "caresyn.name",
     "label"     : "Caresyn Test Name",
     "type"      : "text",
     "default"   : "Namenloser"
+  }, {
+  "tab"       : "Ponus",
+  "key"       : "ponus.user.name",
+  "label"     : "Caresyn Benutzername",
+  "type"      : "text",
+  "default"   : ""
+  }, {
+  "tab"       : "Ponus",
+  "key"       : "ponus.user.pass",
+  "label"     : "Caresyn Passwort",
+  "type"      : "text",
+  "default"   : ""
+  }, {
+  "tab"       : "Ponus",
+  "key"       : "ponus.user.pass",
+  "label"     : "Caresyn Passwort",
+  "type"      : "text",
+  "default"   : ""
   }
+
 ]
