@@ -10,7 +10,7 @@ class CaresynContentController extends Controller
 
   public function sayCaresyn( Twig $twig ):string
   {
-    return $twig->render('HelloCaresyn::hello.twig');
+    return $twig->render('Caresyn::hello.twig');
   }
 
 }
