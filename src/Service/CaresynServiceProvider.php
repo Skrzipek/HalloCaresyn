@@ -11,7 +11,7 @@ class CaresynServiceProvider extends ServiceProvider
    * Register Service Provider
    */
    public function register() {
-     $this->getApplication()->register( \Caresyn\Service\CaresynRouteServiceProvider::class );
+     $this->getApplication()->register( CaresynRouteServiceProvider::class );
    }
 
 }
