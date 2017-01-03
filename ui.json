@@ -5,7 +5,7 @@
                             {
                               "label": "Hello Caresyn",
                               "menu": "start",
-                              "urlKey": "hello-world",
+                              "urlKey": "hello-caresyn",
                               "entryPoint": "index.html"
                             }
                           ]

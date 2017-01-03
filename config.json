@@ -1,6 +1,18 @@
 [
   {
-      "key"     : "caresyn.testing",
-      "label"   : "Caresyn Test"
+      "key"     : "caresyn.string.bold",
+      "label"   : "Caresyn Test String Bold",
+      "type"    : "dropdown",
+      "possibleValues": {
+              "0":"No",
+              "1":"Yes"
+            },
+      "default":"0"
+  },
+  {
+    "key"       : "caresyn.string.italic",
+    "label"     : "Caresyn Test String Italic",
+    "type"      : "checkbox",
+    "default"   : "false"
   }
 ]
