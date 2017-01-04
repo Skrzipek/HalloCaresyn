@@ -53,28 +53,32 @@ class CaresynContentController extends Controller
 
       $settings     = pluginApp(PonusSettings::class);
 
-      $settingsRead = pluginApp(PonusSettings::class);
+      $settingsRead1 = pluginApp(PonusSettings::class);
+
+      $settingsRead2 = pluginApp(PonusSettings::class);
 
       $dataBase = pluginApp(DataBase::class);
 
       if($settings instanceof PonusSettings)
       {
 
-          $settings->id        = 1;
-          $settings->name      = "Luftgewehr";
-          $settings->value     = "Glatte 12";
+          $settings->id        = 2;
+          $settings->name      = "Pistole";
+          $settings->value     = "Glatte 1";
           $settings->createdAt = date('Y-m-d H:i:s');
           $settings->updatedAt = date('Y-m-d H:i:s');
 
           $settings = $dataBase->save($settings);
       }
 
-      $settingsRead = $dataBase->find(PonusSettings::class, 1);
+      $settingsRead1 = $dataBase->find(PonusSettings::class, 1);
+      $settingsRead2 = $dataBase->find(PonusSettings::class, 2);
 
       $templateData = array(
           'resultCount' => $resultItems->count(),
           'currentItems' => $items,
-          'settings' => $settingsRead
+          'settings1' => $settingsRead1,
+          'settings2' => $settingsRead2
       );
 
       return $twig->render('Caresyn::hello.twig', $templateData);
