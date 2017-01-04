@@ -48,17 +48,13 @@ class CaresynContentController extends Controller
           $items[] = $item;
       }
 
-
-
-
-      $settings     = pluginApp(PonusSettings::class);
-
-      $settingsRead1 = pluginApp(PonusSettings::class);
-
-      $settingsRead2 = pluginApp(PonusSettings::class);
+      // $settings     = pluginApp(PonusSettings::class);
+      // $settingsRead1 = pluginApp(PonusSettings::class);
+      // $settingsRead2 = pluginApp(PonusSettings::class);
 
       $dataBase = pluginApp(DataBase::class);
 
+      /*
       if($settings instanceof PonusSettings)
       {
 
@@ -70,6 +66,7 @@ class CaresynContentController extends Controller
 
           $settings = $dataBase->save($settings);
       }
+      */
 
       $settingsRead1 = $dataBase->find(PonusSettings::class, 1);
       $settingsRead2 = $dataBase->find(PonusSettings::class, 2);

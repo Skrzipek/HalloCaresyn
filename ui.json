@@ -1,12 +1,18 @@
 {
-    "defaultEntryPoint" : "index.html",
+    "defaultEntryPoint" : "ponus.html",
     "namespace"         : "Caresyn",
     "menuEntries"       : [
                             {
-                              "label": "Hello Caresyn",
-                              "menu": "start",
-                              "urlKey": "caresyn",
-                              "entryPoint": "index.html"
+                              "label": "Grundeinstellung Ponus",
+                              "menu": "settings/crm",
+                              "urlKey": "ponus-settings",
+                              "entryPoint": "ponus-settings.html"
+                            },
+                            {
+                              "label": "Ponus",
+                              "menu": "crm",
+                              "urlKey": "ponus",
+                              "entryPoint": "ponus.html"
                             }
                           ]
 }
