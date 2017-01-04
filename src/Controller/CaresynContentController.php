@@ -17,7 +17,7 @@ class CaresynContentController extends Controller
       $items = array();
 
       $resultItems = $itemRepository
-          ->search($items, ['de']);
+          ->search(null, ['de']);
 
       foreach ($resultItems as $item)
       {
