@@ -37,4 +37,13 @@
             </div>
         </div>
 
+
+    {% set certifiedPonus = LayoutContainer.show("Caresyn::Ponus.Container") %}
+    {% if certifiedPonus|trim is not empty %}
+        <div class="services-certificate m-b-1">
+            <strong class="services-title">{{ trans("Caresyn::Template.generalCertifiedBy") }}</strong>
+            {{ certifiedPonus }}
+        </div>
+    {% endif %}
+
 {% endblock %}

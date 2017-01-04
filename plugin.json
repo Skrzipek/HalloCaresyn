@@ -14,8 +14,21 @@
     "email"             : "Oliver.Skrzipek@caresyn.com",
     "phone"             : "0176 43920914",
     "serviceProvider"   : "Caresyn\\Service\\CaresynServiceProvider",
-    "containers"        : [],
-    "dataProviders"     : [],
+    "containers"        : [
+      {
+        "key" : "Ponus.Container",
+        "name" : "Ponus Container Versuch 1",
+        "description" : "Ponus Beschreibung 1",
+        "multiple" : true
+      }
+    ],
+    "dataProviders"     : [
+      {
+        "key" : "Caresyn\\Container\\PonusContainer",
+        "name" : "PonusName",
+        "description" : "Ponus Beschreibung"
+      }
+    ],
     "javaScriptFiles"   : [],
     "require"           : [],
     "dependencies"      : [],
