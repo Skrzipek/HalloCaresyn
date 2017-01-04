@@ -12,6 +12,15 @@ use Plenty\Modules\Item\DataLayer\Contracts\ItemDataLayerRepositoryContract;
 class CaresynContentController extends Controller
 {
 
+  public function getSettings():string
+  {
+      $dataBase         = pluginApp(DataBase::class);
+      $settingsRead2    = $dataBase->find(PonusSettings::class, 2);
+      return $settingsRead2.name;
+  }
+
+
+
   public function sayCaresyn( Twig $twig, ItemDataLayerRepositoryContract $itemRepository ):string
   {
       $itemColumns = [

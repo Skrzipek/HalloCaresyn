@@ -16,6 +16,10 @@ class CaresynRouteServiceProvider extends RouteServiceProvider
   public function map( Router $router )
   {
       $router->get('hellocaresyn', 'Caresyn\Controller\CaresynContentController@sayCaresyn');
+
+      $router->get('ponus/settings', 'Caresyn\Controller\CaresynContentController@getSettings');
   }
+
+
 
 }
