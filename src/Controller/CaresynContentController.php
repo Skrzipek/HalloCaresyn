@@ -13,6 +13,7 @@ class CaresynContentController extends Controller
 
   public function sayCaresyn( Twig $twig ):string
   {
+      /*
       $settings     = pluginApp(PonusSettings::class);
 
       $settingsRead = pluginApp(PonusSettings::class);
@@ -31,7 +32,7 @@ class CaresynContentController extends Controller
       }
 
       $settingsRead = $dataBase->find( $settings );
-
+        */
       return $twig->render('Caresyn::hello.twig');
   }
 
