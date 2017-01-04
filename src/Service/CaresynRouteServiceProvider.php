@@ -4,7 +4,6 @@ namespace Caresyn\Service;
 
 use Plenty\Plugin\RouteServiceProvider;
 use Plenty\Plugin\Routing\Router;
-use Caresyn\Models;
 
 class CaresynRouteServiceProvider extends RouteServiceProvider
 {

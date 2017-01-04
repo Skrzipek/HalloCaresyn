@@ -7,6 +7,7 @@ use Plenty\Plugin\Templates\Twig;
 
 use Caresyn\Models\PonusSettings;
 use Plenty\Modules\Plugin\DataBase\Contracts\DataBase;
+use Plenty\Modules\Item\DataLayer\Contracts\ItemDataLayerRepositoryContract;
 
 class CaresynContentController extends Controller
 {
