@@ -16,7 +16,7 @@ class CaresynContentController extends Controller
   {
       $dataBase         = pluginApp(DataBase::class);
       $settingsRead2    = $dataBase->find(PonusSettings::class, 2);
-      return $settingsRead2.name;
+      return $settingsRead2;
   }
 
 
