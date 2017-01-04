@@ -2,9 +2,6 @@
 
 namespace Caresyn\Service;
 
-use Caresyn\Models;
-use Plenty\Modules\Plugin\DataBase\Contracts\DataBase;
-
 class CaresynPonusSettingsService
 {
 
