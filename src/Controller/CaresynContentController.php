@@ -5,7 +5,7 @@ namespace Caresyn\Controller;
 use Plenty\Plugin\Controller;
 use Plenty\Plugin\Templates\Twig;
 
-use Caresyn\Models;
+use Caresyn\Models\PonusSettings;
 use Plenty\Modules\Plugin\DataBase\Contracts\DataBase;
 
 class CaresynContentController extends Controller
