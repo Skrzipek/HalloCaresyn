@@ -7,6 +7,8 @@
  */
 namespace Caresyn\Container;
 
+use Plenty\Plugin\Templates\Twig;
+
 class PonusContainer
 {
     public function call(Twig $twig):string
