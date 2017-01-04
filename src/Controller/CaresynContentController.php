@@ -48,10 +48,7 @@ class CaresynContentController extends Controller
           $items[] = $item;
       }
 
-      $templateData = array(
-          'resultCount' => $resultItems->count(),
-          'currentItems' => $items
-      );
+
 
 
       $settings     = pluginApp(PonusSettings::class);
@@ -63,6 +60,7 @@ class CaresynContentController extends Controller
       if($settings instanceof PonusSettings)
       {
 
+          $settings->id        = 1;
           $settings->name      = "Luftgewehr";
           $settings->value     = "Glatte 12";
           $settings->createdAt = date('Y-m-d H:i:s');
@@ -71,6 +69,11 @@ class CaresynContentController extends Controller
           $settings = $dataBase->save($settings);
       }
 
+      $templateData = array(
+          'resultCount' => $resultItems->count(),
+          'currentItems' => $items,
+          'settings' => $settings
+      );
 
       return $twig->render('Caresyn::hello.twig', $templateData);
   }
