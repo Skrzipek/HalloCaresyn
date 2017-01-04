@@ -15,10 +15,17 @@ class CaresynContentController extends Controller
   public function sayCaresyn( Twig $twig, ItemDataLayerRepositoryContract $itemRepository ):string
   {
       $items = array();
-      $itemRepository->search($items, ['de']);
+
+      $resultItems = $itemRepository
+          ->search($items, ['de']);
+
+      foreach ($resultItems as $item)
+      {
+          $items[] = $item;
+      }
 
       $templateData = array(
-          'resultCount' => $items->count(),
+          'resultCount' => $resultItems->count(),
           'currentItems' => $items
       );
 
