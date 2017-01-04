@@ -23,3 +23,16 @@
                 </p>
             </div>
         </div>
+
+
+
+<div class="col-xs-12 col-sm-6">
+    {{ LayoutContainer.show("PluginCeres::BasketPreview.BeforeCheckoutButton") }}
+    <a v-resource-if:user="isLoggedIn" href="/checkout" class="btn btn-primary btn-block checkOutBtn" title="{{ trans("PluginCeres::Ceres.basketToCheckout") }}">
+        {{ trans("PluginCeres::Ceres.basketToCheckout") }} <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </a>
+    <a v-resource-if:user="!isLoggedIn" href="/login" class="btn btn-primary btn-block checkOutBtn" title="{{ trans("PluginCeres::Ceres.basketToCheckout") }}">
+        {{ trans("PluginCeres::Ceres.basketToCheckout") }} <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </a>
+    {{ LayoutContainer.show("PluginCeres::BasketPreview.AfterCheckoutButton") }}
+</div>

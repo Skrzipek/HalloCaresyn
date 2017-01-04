@@ -4,6 +4,7 @@ namespace Caresyn\Service;
 
 use Plenty\Plugin\RouteServiceProvider;
 use Plenty\Plugin\Routing\Router;
+use Caresyn\Models;
 
 class CaresynRouteServiceProvider extends RouteServiceProvider
 {
@@ -13,8 +14,9 @@ class CaresynRouteServiceProvider extends RouteServiceProvider
      * The second parameter consists of the Fully-Qualified Class Name and the @ Controller method that is called when the route is called.
      * @param Router $router
      */
-  public function map( Router $router ) {
-    $router->get('hellocaresyn', 'Caresyn\Controller\CaresynContentController@sayCaresyn');
+  public function map( Router $router )
+  {
+      $router->get('hellocaresyn', 'Caresyn\Controller\CaresynContentController@sayCaresyn');
   }
 
 }
