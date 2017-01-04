@@ -69,10 +69,12 @@ class CaresynContentController extends Controller
           $settings = $dataBase->save($settings);
       }
 
+      $settingsRead = $dataBase->find(PonusSettings::class, 1);
+
       $templateData = array(
           'resultCount' => $resultItems->count(),
           'currentItems' => $items,
-          'settings' => $settings
+          'settings' => $settingsRead
       );
 
       return $twig->render('Caresyn::hello.twig', $templateData);
