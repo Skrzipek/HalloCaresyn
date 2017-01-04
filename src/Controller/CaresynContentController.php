@@ -53,7 +53,7 @@ class CaresynContentController extends Controller
           'currentItems' => $items
       );
 
-      /*
+
       $settings     = pluginApp(PonusSettings::class);
 
       $settingsRead = pluginApp(PonusSettings::class);
@@ -71,8 +71,7 @@ class CaresynContentController extends Controller
           $settings = $dataBase->save($settings);
       }
 
-      $settingsRead = $dataBase->find( $settings );
-        */
+
       return $twig->render('Caresyn::hello.twig', $templateData);
   }
 
