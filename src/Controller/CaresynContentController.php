@@ -11,8 +11,16 @@ use Plenty\Modules\Plugin\DataBase\Contracts\DataBase;
 class CaresynContentController extends Controller
 {
 
-  public function sayCaresyn( Twig $twig ):string
+  public function sayCaresyn( Twig $twig, ItemDataLayerRepositoryContract $itemRepository ):string
   {
+      $items = [];
+      $itemRepository->search($items, ['de']);
+
+      $templateData = array(
+          'resultCount' => $items->count(),
+          'currentItems' => $items
+      );
+
       /*
       $settings     = pluginApp(PonusSettings::class);
 
@@ -33,7 +41,7 @@ class CaresynContentController extends Controller
 
       $settingsRead = $dataBase->find( $settings );
         */
-      return $twig->render('Caresyn::hello.twig');
+      return $twig->render('Caresyn::hello.twig', $templateData);
   }
 
 }
