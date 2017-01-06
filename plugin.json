@@ -1,7 +1,7 @@
 {
     "name"              : "Caresyn",
     "namespace"         : "Caresyn",
-    "type"              : ["backend", "template"],
+    "type"              : ["template"],
     "version"           : "1.0.0",
     "license"           : "Teuer",
     "pluginIcon"        : "",
